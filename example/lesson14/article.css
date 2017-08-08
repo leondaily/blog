@@ -1,0 +1,130 @@
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+
+ body {
+   lighting-color: 1;
+ }
+
+ .clearfix:before,
+ .clearfix:after {
+   content: "";
+   display: table;
+ }
+
+ .clearfix:after {
+   clear: both;
+   overflow: hidden;
+ }
+
+ .clearfix {
+   zoom: 1;
+ }
+
+ .post {
+   width: 520px;
+   height: 250px;
+   margin: 100px auto;
+   padding: 15px;
+   box-shadow: 0 3px 10px rgba(0, 0, 0, .3);
+ }
+
+ .post-header {
+   font-size: 13px;
+   line-height: 30px;
+ }
+
+ .avatar {
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+ }
+
+ .nickname {
+   color: #333;
+ }
+
+ .label, .time {
+   color: #777;
+ }
+
+ .mr10 {
+   margin-right: 10px;
+ }
+  .mr15{
+    margin-right: 15px;
+  }
+
+ .mb15 {
+   margin-bottom: 15px;
+ }
+
+ .pull-left {
+   float: left;
+ }
+
+ .post-title h1 {
+   font-size: 16px;
+   color: #000;
+ }
+
+ .pc-lf {
+   float: left;
+   width: 345px;
+ }
+
+ .pc-rt {
+   display: table;
+   float: right;
+   width: 145px;
+   height: 100%;
+   text-align: center;
+ }
+
+ .pc-rt .inner {
+   display: table-cell;
+   vertical-align: middle;
+ }
+
+ .post-content {
+   height: 140px;
+ }
+
+ .post-text {
+   padding: 13px 0 0 0;
+ }
+
+ .pc-rt img {
+   width: 100px;
+ }
+
+ .post-text p {
+   font-size: 14px;
+   color: #666;
+   line-height: 1.5;
+ }
+.post-footer{
+  font-size: 0px;
+}
+.post-footer .btn{
+  padding: 0 5px;
+  color: #f33;
+  border: 1px solid #f33;
+  border-radius: 4px;
+}
+.post-footer > a{
+  font-size: 12px;
+  vertical-align: top;
+  cursor: pointer;
+}
+.post-footer > a:hover .iconfont{
+  color: #f33;
+}
+.icon{
+  color: #b6b6b6;
+}
+.iconfont{
+  margin-right: 3px;
+}
