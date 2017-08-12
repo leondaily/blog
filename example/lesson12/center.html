@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>居中</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .box {
+      padding: 20px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, .3);
+    }
+
+    .border {
+      border: 1px solid #000000;
+    }
+
+    .demo1 {
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .demo2 {
+      width: 100px;
+      padding: 30px;
+    }
+
+    .demo3 {
+      width: 100px;
+      height: 100px;
+      margin: 50px auto 0;
+    }
+
+    .demo4{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin: -50px 0 0 -50px;
+      width: 100px;
+      height: 100px;
+    }
+
+    .box-wrap {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin-bottom: 20px;
+      background: #eee;
+    }
+    .demo-table{
+      display: table;
+    }
+    .demo5{
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+    }
+    .demo-flex{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h2>文字居中案例：</h2>
+    <div class="demo1 border">line-height</div>
+    <div class="demo2 border">padding</div>
+  </div>
+  <div class="box">
+    <h2>固定高度块级元素居中案例：</h2>
+    <div class="box-wrap border">
+      <div class="demo3 border">magin</div>
+    </div>
+    <div class="box-wrap border">
+      <div class="demo4 border">position</div>
+    </div>
+  </div>
+  <div class="box">
+      <h2>未知高度块级元素居中案例：</h2>
+      <div class="box-wrap border demo-table">
+        <div class="demo5">display:table</div>
+      </div>
+      <div class="box-wrap border demo-flex">
+        <div class="demo6 border">display:flex</div>
+      </div>
+    </div>
+</body>
+
+</html>
