@@ -1,0 +1,386 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+}
+
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+  overflow: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+.bg-gray{
+  background-color: #f7f7f7;
+}
+.response{
+  margin: 0 auto;
+}
+@media (min-width:980px) {
+  .response{
+    width: 1180px;
+  }
+}
+header,section{
+  position: relative;
+  min-height: 100%;
+}
+header{
+  background: url('http://ossweb-img.qq.com/images/lol/v2/banner/pic-big-v8.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, .3);
+  z-index: 99;
+}
+.nav-inner{
+  height: 120px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.nav-inner ul li{
+  float: left;
+}
+.nav-inner a{
+  color: #fff;
+  font-size: 16px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.nav-inner a:hover{
+  color: #ffcb60;
+}
+.logo{
+  width: 190px;
+  height: 100px;
+  background-image: url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png);
+  background-position: 0 -30px;
+}
+
+.header-inner p{
+  color: #fff;
+  padding-bottom: 30px;
+}
+.btn{
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: 0;
+}
+.btn-yellow{
+  color: #fff;
+  background-color: #dca73b;
+}
+.header-inner .title{
+  font-size: 50px;
+  color: #ffcb60;
+}
+.header-inner .subtitle{
+  font-size: 30px;
+}
+
+.section-lol{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-lol .header{
+  text-align: center;
+  padding: 0 0 60px 0;
+}
+.section-lol .header h1{
+  color: #333;
+  font-size: 40px;
+}
+.section-lol .header h3{
+  color: #777;
+  font-size: 16px;
+}
+.bg-feedback{
+  background: url('http://ossweb-img.qq.com/images/lol/v2/banner/pic-big-v2.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.nickname{
+  color: #333;
+  font-size: 16px;
+  padding: 20px 0;
+}
+.detail p{
+  line-height: 1.6;
+  font-size: 14px;
+  color: #777;
+}
+.game-content ul{
+  display: flex;
+  justify-content: center;
+}
+.game-content ul li{
+  flex: 1;
+  padding: 0 10px;
+  text-indent: 2rem;
+}
+.game-content .avatar img{
+  width: 100px;
+  height: 100px;
+}
+.game-inner{
+  text-align: center;
+}
+.match-inner .header{
+  padding-top: 100px;
+}
+.match-content{
+  position: relative;
+}
+.match-content ul::after{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #f1f1f1;
+  left: 50%;
+  top: 0;
+}
+.match-content ul li:nth-child(even) .text{
+  text-align: left;
+  float: right;
+}
+.match-content ul li:nth-child(odd) .text{
+  text-align: right;
+  float: left;
+}
+
+.math-item{
+  position: relative;
+  margin-bottom: 40px;
+}
+.math-item .text{
+  width: 40%;
+}
+.math-item .pic{
+  width: 165px;
+  height: 165px;
+  border-radius: 50%;
+  border: 5px solid #f1f1f1;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -75px;
+  z-index: 2;
+}
+.math-item img{
+  width: 100%;
+}
+.math-item h2{
+  color: #333;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.math-item p{
+  color: #777;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.mall-content{
+  text-align: center;
+}
+
+.mall-content img{
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .3)
+}
+.mall-content ul{
+  display: flex;
+}
+.mall-content ul li{
+  flex: 1;
+  padding: 0 20px;
+}
+.mall-content .name{
+  font-size: 18px;
+  color: #333;
+  padding: 15px 0 10px;
+}
+.mall-content .price{
+  font-size: 14px;
+  color: #f33;
+}
+.mall-footer{
+  padding: 30px 200px;
+}
+.mall-footer p{
+  color: #777;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+}
+.system-content .btn-group{
+  padding: 30px 0 0 0;
+  text-align: center;
+}
+.system-content .btn{
+  font-size: 30px;
+}
+.form{
+  display: flex;
+}
+.form-panel{
+  flex: 1;
+  margin: 0 10px;
+}
+.form-group{
+  margin-bottom: 20px;
+}
+.form-group:last-child{
+  margin: 0;
+}
+.form-panel input, .form-panel textarea{
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #e3e3e3;
+  border-radius:3px;
+}
+.form-panel textarea{
+  height: 100%;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  height: 90px;
+}
+.copyright{
+  display: flex;
+  justify-content:space-between;
+}
+.vedio-content .item{
+  position: relative;
+  width: 33.333%;
+  float: left;
+  text-align: center;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+.vedio-content .item-pic{
+  position: relative;
+  cursor: pointer;
+}
+.vedio-content .item-pic:hover .shade{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 50px;
+  color: #fff;
+  background: rgba(254, 209, 54, .9);
+  transition: all ease .5s;
+  -webkit-transition: all ease .5s;
+}
+.vedio-content .item-pic img{
+  display: block;
+  width: 100%;
+}
+.vedio-content .item-detail{
+  background-color: #fff;
+  padding: 10px 0;
+}
+.vedio-content .item-detail h1{
+  color: #333;
+}
+.vedio-content .item-detail h4{
+  color: #777;
+}
+.shade{
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+@media (max-width:980px) {
+  .response{
+    padding: 0 20px;
+  }
+  .header-inner{
+    padding: 0 20px;
+  }
+  .game-content ul{
+    flex-direction: column;
+  }
+  .game-content ul li{
+    margin-bottom: 30px;
+  }
+  .logo{
+    display: none;
+  }
+  .mall-content ul{
+    flex-direction: column;
+  }
+  .mall-content ul li{
+    margin-bottom: 30px;
+  }
+  .mall-footer{
+    padding: 30px;
+  }
+  .section-lol{
+    padding: 60px 0;
+  }
+  .match-inner .header{
+    padding-top: 0;
+  }
+  .form{
+    flex-direction: column;
+  }
+  .form textarea{
+    margin-top: 20px;
+  }
+  .copyright{
+    flex-direction: column;
+  }
+  .math-item .pic{
+    left: 20px;
+    margin: 0;
+  }
+  .math-item .text{
+    float: left !important;
+    text-align: left !important;
+    width: calc(100% - 220px);
+    margin-left: 200px;
+  }
+  .match-content ul::after{
+    left: 92px;
+  }
+  .vedio-content .item{
+    width: 100%;
+    float: initial;
+  }
+}
